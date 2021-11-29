@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maciej Kosiński</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/b1b0bed29b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.png">
+  </head>
+  <body>
+    <section class="profile section">
+        <div class="container">
+            <div class="columns profileColumns">
+                <div class="column leftColumn is-one-third">
+                </div>
+                <div class="column middleColumn is-one-third is-inline-block has-text-centered">
+                    <div>
+                        <figure class="image has-text-centered " style="padding-bottom: 0%;">
+                            <img class="is-rounded headshot" id="profileImgWithGradientBorder" src="https://media-exp1.licdn.com/dms/image/C5603AQE7N2or1bGgPA/profile-displayphoto-shrink_800_800/0/1581608469089?e=1642636800&v=beta&t=5hs2c3fLDFHEetSeiJMLhvF7e8_Y6DpRIcn_1_B_PNI" alt="profilePicture"></img>
+                        </figure>
+                    </div>
+                    <div>
+                        <h1 class="title has-text-primary profileTitle">
+                            Maciej Kosiński
+                        </h1>
+                    </div>
+                </div>
+                <div class="column rightColumn is-one-third" >
+                    <div class="container has-text-centered " style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <p class="title textGradiantPrimary ">Contacts</p>
+                        <p class="textGradiantPrimary"><i class="fas fa-home textGradiantPrimary"></i> Pelt, Belgium</p>
+                        <p class="textGradiantPrimary"><i class="fas fa-envelope textGradiantPrimary"></i> kosamk2@gmail.com</p>
+                        <p class="textGradiantPrimary"><i class="fas fa-phone textGradiantPrimary"></i> +32 477084246</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section ">   
+        <div class="container is-half">
+            <h1 class="title textGradiantPrimary">About me</h1>
+            <h2 class="subtitle">
+                I'm computer sicence graduate, passioned about programing and game development. 
+            </h2>
+            <br> 
+        </div> 
+        <div class="container">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                  <article class="tile is-child  is-6">
+                    <h1 class="title textGradiantPrimary">Education</h1>
+                    <p class="has-text-primary">Zachodniopomorska Szkoła Biznesu</p>
+                    <p class="">Bachelor's degree, Computer Science Specialization: Game Design</p>
+                    <p>2017 - 2021</p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child  is-6">
+                    <h1 class="title textGradiantPrimary">Languages</h1>
+                    <dl>
+                        <dt class="mb-1">Polish</dt>
+                        <dt class="mb-1">English</dt>
+                        <dt class="mb-1">Dutch</dt>
+                    </dl> 
+                  </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container is-centered is-half">
+            <h1 class="title textGradiantPrimary">Skills</h1>
+            <h2 class="subtitle">
+                Lately I have been progamming in <strong>C#</strong>, updating game that I have made in <strong>Unity</strong> for my <button class="button gradientSecondary" id="gradWork">graduation work</button>, and working on a <strong>WPF</strong> <button class="button gradientSecondary" id="internWork">application</button> durning my internship.
+            </h2>
+            <div style="display: flex;">
+                <div class="container">
+                    <h2>
+                        Durning my studies I have been programing in:
+                    </h2>
+                    <ul>
+                        <dt><strong>C#</strong></dt>
+                        <dt><strong>C++</strong></dt>
+                        <dt><strong>Python</strong></dt>
+                        <dt><strong>Html & css</strong></dt>
+                        <dt><strong>Java</strong></dt>
+                        <dt><strong>Matlab</strong></dt>
+                    </ul>
+                    <br> 
+                </div>
+                <div class="container">
+                    <h2>
+                        I also know 2D and 3D programs such as:
+                    </h2>
+                    <ul>
+                        <dt><strong>Blender</strong></dt>
+                        <dt><strong>Adobe photoshop</strong></dt>
+                        <dt><strong>Adobe illustrator</strong></dt>
+                        <dt><strong>Aesprite</strong></dt>
+                    </ul>
+                    <br> 
+                </div>
+            </div>
+        </div> 
+        <br>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered is-color-primary">
+            <p>
+                <a>Find me on social media: </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/maciej-kosiński-127390141/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/SirKOSA"><i class="fab fa-github"></i></a>
+                <a href="https://www.artstation.com/sirkosa"><i class="fab fa-artstation"></i></a>
+                <a href="https://sirkosa.itch.io"><i class="fab fa-itch-io"></i></a>
+            </p>
+        </div>
+      </footer>
+
+      <div class="modal" id="gradWorkModal">
+        <div class="modal-background closeModal"></div>
+        <div class="modalContentWrapper">
+            <div class="modal-content">
+                <div class="container">
+                    <h1 class="title textGradiantPrimary">Graduation work</h1>
+                    <p>For my graduation work I have made multiplayer game using Blender and Unity.</p>
+                    <p>The game "Tough Week" is a local multiplayer game that supports up to 4 players. During gameplay, players can choose their own color and hat for their character, and compete in a series of challenges to win the tournament. Player with the most wins at the end of the game, wins</p>
+                    <p>Players can join the game using keyboard or controller by pressing single button. The game lets players setup tournament with single level or let the game choose diffrent level for each round randomly. Available levels are determined by the amount of players that joined the game.</p>
+                    <p>The game has levels that each have their own implementation of scoring players and some randomness. When the winner is selected the event about winner is triggered and the trournament singleton saves winners id into scoreboard</p>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large closeModal" aria-label="close"></button>
+      </div>
+
+      <div class="modal" id="internWorkModal">
+        <div class="modal-background closeModal"></div>
+        <div class="modalContentWrapper">
+            <div class="modal-content">
+                <div class="container">
+                    <h1 class="title textGradiantPrimary">Internship</h1>
+                    <p>Durning my internship in fundation "Równe szanse", I have been working on a front end quiz application in WPF as well as escaperoom game for students.</p>
+                    <p>In the WPF application I had build a user interface from the provided UI and implemented lists with questions and papers for students to learn. All the questions aswell as logins for the applications were pulled from api.</p>
+                    <p>In the escaperoom project, I had been working on programming the logic of puzzles and editor, so that teachers could change puzzles to required a diffrent anwsers from students.</p>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large closeModal" aria-label="close"></button>
+      </div>
+
+      <script src="script.js"></script>
+
+  </body>
+</html>
