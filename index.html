@@ -4,161 +4,402 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maciej Kosiński</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/b1b0bed29b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.png">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   </head>
+  <div id="particles">
+    <canvas class="background"></canvas>
+  </div>
+  
   <body>
-    <section class="profile section">
-        <div class="container">
-            <div class="columns profileColumns">
-                <div class="column leftColumn is-one-third">
+    <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <main>
+        <div class="container my-5 bg-light shadow-lg p-0">
+          <div class="container shadow">         
+            <div class="row pb-0 pe-lg-0 align-items-center rounded-3 position-relative">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                  <div class="container p-0">
+                    <span class="mx-1" ><i class="fas fa-home"></i> Pelt, Belgium</span>
+                    <span class="mx-1"><i class="fas fa-envelope"></i> kosamk2@gmail.com</span>
+                    <span class="mx-1"><i class="fas fa-phone"></i> +32 477 084 246</span>
+                  </div>
+                  <br>
+                  <h1 class="display-4 fw-bold lh-1">Maciej Kosiński</h1>
+                  <p class="lead">I'm computer science graduate, passioned about programming and game development.</p>
+                  <br>
+                  <div class="position-absolute bottom-0 start-10">
+                    <p class="">
+                      <a href="https://www.linkedin.com/in/maciej-kosiński-127390141/"><i class="fab fa-linkedin-in fs-3 hero-social-icon"></i></a>
+                      <a href="https://github.com/SirKOSA"><i class="fab fa-github fs-3 hero-social-icon"></i></a>
+                      <a href="https://www.artstation.com/sirkosa"><i class="fab fa-artstation fs-3 hero-social-icon"></i></a>
+                      <a href="https://sirkosa.itch.io"><i class="fab fa-itch-io fs-3 hero-social-icon"></i></a>
+                    </p>
+                  </div>
                 </div>
-                <div class="column middleColumn is-one-third is-inline-block has-text-centered">
-                    <div>
-                        <figure class="image has-text-centered " style="padding-bottom: 0%;">
-                            <img class="is-rounded headshot" id="profileImgWithGradientBorder" src="pimg.png" alt="profilePicture"></img>
-                        </figure>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3" src="img/profilePic.jpg" alt="" width="720">
+                </div>
+            </div>
+          </div>
+            <div class="container main-content py-5 px-4">
+              <div class="row align-items-center">
+                  <div class="col-lg-4">
+                    <img class="rounded-circle my-img" width="140" height="140" src="img/programming.png"  focusable="false">
+                    <h2 >Programming</h2>
+                    <p>I have been programming in alot of languages durning my studies, which led me to fall in love with creativity and problem solving that programming requires.</p>
+                    <p><a class="btn btn-purple" href="#programming">View details &raquo;</a></p>
                     </div>
-                    <div>
-                        <h1 class="title has-text-primary profileTitle">
-                            Maciej Kosiński
-                        </h1>
+                  <div class="col-lg-4">
+                    <img class="rounded-circle my-img" width="140" height="140" src="img/2dGraphics.jpg" focusable="false">
+                    <h2 >2D</h2>
+                    <p>Before I took my path in programming, I have been drawing for a long time. That hobby led me to studing 2d graphics and pixelart.</p>
+                    <p><a class="btn btn-pink" href="#graphics">View details &raquo;</a></p>
                     </div>
-                </div>
-                <div class="column rightColumn is-one-third" >
-                    <div class="container has-text-centered " style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                        <p class="title textGradiantPrimary ">Contacts</p>
-                        <p class="textGradiantPrimary"><i class="fas fa-home textGradiantPrimary"></i> Pelt, Belgium</p>
-                        <p class="textGradiantPrimary"><i class="fas fa-envelope textGradiantPrimary"></i> kosamk2@gmail.com</p>
-                        <p class="textGradiantPrimary"><i class="fas fa-phone textGradiantPrimary"></i> +32 477084246</p>
-                    </div> 
-                </div>
+                  <div class="col-lg-4">
+                    <img class="rounded-circle my-img" width="140" height="140" src="img/3dGraphics.png"  focusable="false">            
+                    <h2 >3D</h2>
+                    <p>Durning my studies I have learned basics of 3D graphics which made modelling and animations a new hobby of my.</p>
+                    <p><a class="btn btn-green" href="#graphics">View details &raquo;</a></p>
+                  </div>
+              </div>
+  
+              <hr class="featurette-divider" style="color: #ffffff00;">
+              
             </div>
-        </div>
-    </section>
-    <section class="section ">   
-        <div class="container is-half">
-            <h1 class="title textGradiantPrimary">About me</h1>
-            <h2 class="subtitle">
-                I'm computer sicence graduate, passioned about programming and game development. 
-            </h2>
-            <br> 
-        </div> 
-        <div class="container">
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child  is-6">
-                    <h1 class="title textGradiantPrimary">Education</h1>
-                    <p class="has-text-primary">Zachodniopomorska Szkoła Biznesu</p>
-                    <p class="">Bachelor's degree, Computer Science Specialization: Game Design</p>
-                    <p>2017 - 2021</p>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child  is-6">
-                    <h1 class="title textGradiantPrimary">Languages</h1>
-                    <dl>
-                        <dt class="mb-1">Polish</dt>
-                        <dt class="mb-1">English</dt>
-                        <dt class="mb-1">Dutch</dt>
-                    </dl> 
-                  </article>
-                </div>
+
+            <div class="bg-light shadow-lg px-4 featurette" id="aboutMe">
+              <div class="col-md-5">
+                <h2 class="featurette-heading mt-0 pt-5">Education</h2>
+                <p class="lead">I have finished Electromechanics in Belgium and went to university in Hasselt to get bachelor degree in IT.
+                   Unfortunately I have stopped further studies in PXL after 2 years. 
+                   But with the knowledge gained in these years, I have successfully finished bachelor in Computer Science in ZPSB.</p>
+              </div>
+              <div class="col-md-7">
+                <img class="featurette-image img-fluid mx-auto"  alt="" >
+              </div>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container is-centered is-half">
-            <h1 class="title textGradiantPrimary">Skills</h1>
-            <h2 class="subtitle">
-                Lately I have been learning <strong>Angular</strong> and updating game that I have made in <strong>Unity</strong> for my <button class="button gradientSecondary" id="gradWork">graduation work</button>.
-                <br/> For my <button class="button gradientSecondary" id="internWork">intership</button>, I have been working in <strong>WPF</strong> and <strong>Unity</strong>. 
-            </h2>
-            <div>
+            <div class="container main-content py-5 px-4">
+
+              <div class="row featurette px-4">
+                <div class="col-md-5">
+                  <h3 class="featurette-heading">KA De Wingerd</h3>
+                  <p class="lead text-dark">Overpelt, Belgium</span></p>
+                  <p class="">Diploma TSO 3rd stage Secondary education  <span class="text-color-green">Electromechanics </span> </p>
+                  <p>2013 - 2015</p>
+                </div>
+                <div class="col-md-7 text-center education-logo">
+                  <img class="featurette-image img-fluid mx-auto img-responsive"  src="img/AtheneumOverpelt.png" alt="Logo Atheneum Overpelt" >
+                </div>
+              </div>
+
+              <div class="row featurette px-4">
+                <div class="col-md-5">
+                  <h3 class="featurette-heading">PXL-IT</h3>
+                  <p class="lead text-dark">Hasselt, Belgium</span></p>
+                  <p class="">Bachelor's degree, Applied Informatics <span class="text-color-purple">Applicaton developer</span> </p>
+                  <p class="text-danger">Did not finished </p>
+                  <p>2015 - 2017</p>
+                </div>
+                <div class="col-md-7 text-center education-logo">
+                  <img class="featurette-image img-fluid mx-auto img-responsive" src="img/PXL.png" alt="Logo PXL" >
+                </div>
+              </div>
+
+              <div class="row featurette px-4">
+                <div class="col-md-5">
+                  <h3 class="featurette-heading">Zachodniopomorska Szkoła Biznesu</h3>
+                  <p class="lead text-dark">Szczecin, Poland</span></p>
+                  <p class="">Bachelor's degree, Computer Science <span class="text-color-pink">Game Design</span> </p>
+                  <p>2017 - 2021</p>
+                </div>
+                <div class="col-md-7 text-center education-logo">
+                  <img class="featurette-image img-fluid mx-auto img-responsive"  src="img/ZPSB-Logo.png" alt="Logo ZPSB" >
+                </div>
+              </div>
+  
+              <hr class="featurette-divider">
+
+              <div class="row featurette mx-4">
+                <div class="col-md-5 order-md-2">
+                  <h2 class="featurette-heading">Languages</h2>
+                  <p class="lead">My native language is Polish, but I always turn off dubbing to keep learning other languages. Living abroad I have learned English and Dutch.</p>
+                </div>
+                <div class="col-md-7 order-md-1">
+                  <div class="" style="margin-left: 10%; margin-right: 25%;">
+                    <div class="row my-1">
+                      <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('img/pl.png'); width: 18rem;">
+                        <div class="h-100 p-2 pb-3 text-white text-shadow-1 has-text-centered">
+                          <h2 class="pt-3 mt-3 mb-2 display-6 lh-1 fw-bold">Polish</h2>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="row my-1">
+                      <div class="card card-cover h-50 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('img/be.png'); width: 18rem;">
+                        <div class="h-100 p-2 pb-3 text-white text-shadow-1 has-text-centered">
+                          <h2 class="pt-3 mt-3 mb-2 display-6 lh-1 fw-bold">Dutch</h2>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="row my-1">
+                      <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('img/gb.png'); width: 18rem;">
+                        <div class="h-100 p-2 pb-3 text-white text-shadow-1 has-text-centered">
+                          <h2 class="pt-3 mt-3 mb-2 display-6 lh-1 fw-bold">English</h2>
+                        </div>
+                      </div>
+                    </div>    
+                  </div>
+                        
+                </div>
+              </div>    
+            </div>         
+          
+              <!-- Programming -->      
+                <div class="bg-light shadow-lg px-4 featurette" id="programming">
+                  <div class="col-md-5">
+                    <h2 class="featurette-heading mt-0 pt-5">Programming</h2>
+                    <p class="lead">What made me learn programming was video games, and what made me stay, was bugs.
+                       I enjoy coding and fixing bugs that appear. Below you will find languages that I have worked with.</p>
+                  </div>
+                  <div class="col-md-7">
+                    <img class="featurette-image img-fluid mx-auto"  alt="" >
+                  </div>
+                </div>
+              <div class="container main-content py-5 px-4">
+                <div class="row featurette">
+
+                <div class="container py-5 px-4" id="icon-grid">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">C#</h4>
+                        <p>While programming in C# I have been using ASP.Net and Unity. 
+                          I have been working on projects such as WebAPI, MVC application, WPF quiz and games made in Unity 
+                          (2D, 3D, singlepllayer and 1 multiplayer game, using mirror)</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Python</h4>
+                        <p>While studying I have learned basics of python and Raspberry Pi. Using python I have build simple mp3 player that looked into mp3 files for artist and song names, to download text from website.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Html / js / css</h4>
+                        <p>While programming I always went back into web development and I enjoy the creativity of it.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Angular</h4>
+                        <p>At that moment angular is my go to frontend framework, which I am still learning.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">C++</h4>
+                        <p>C++ was the main language that I have learned most of the algorithms with. 
+                          I have also helped with a remote lawnmower projekt, by programming software for arduino.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">SQL</h4>
+                        <p>For moste of the databases in my projects I have been using SQL.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Github</h4>
+                        <p>For the version control I have been using github.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ALBUM -->
+              <div class="album py-5">
                 <div class="container">
-                    <h2>
-                        Durning my studies I have been programing in:
-                    </h2>
-                    <ul>
-                        <dt><strong>C#</strong></dt>
-                        <dt><strong>C++</strong></dt>
-                        <dt><strong>Python</strong></dt>
-                        <dt><strong>Html & css</strong></dt>
-                        <dt><strong>Java</strong></dt>
-                        <dt><strong>Matlab</strong></dt>
-                    </ul>
-                    <br> 
+            
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Placeholder</text></svg>
+            
+                        <div class="card-body">
+                          <p class="card-text">   </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button " class="btn btn-sm btn-purple">View</button>
+                            </div>
+                            <small class="text-muted">n/a</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Placeholder</text></svg>
+            
+                        <div class="card-body">
+                          <p class="card-text">    </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button " class="btn btn-sm btn-pink">View</button>
+                            </div>
+                            <small class="text-muted">n/a</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Placeholder</text></svg>
+            
+                        <div class="card-body">
+                          <p class="card-text">    </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button " class="btn btn-sm btn-green">View</button>
+                            </div>
+                            <small class="text-muted">n/a</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="container">
-                    <h2>
-                        I also know 2D and 3D programs such as:
-                    </h2>
-                    <ul>
-                        <dt><strong>Blender</strong></dt>
-                        <dt><strong>Adobe photoshop</strong></dt>
-                        <dt><strong>Adobe illustrator</strong></dt>
-                        <dt><strong>Aesprite</strong></dt>
-                    </ul>
-                    <br> 
-                </div>
+              </div>
+
+  
             </div>
-        </div> 
-        <br>
-    </section>
+            <!-- END Programming-->
 
-    <footer class="footer">
-        <div class="content has-text-centered is-color-primary">
-            <p>
-                <a>Find me on social media: </a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/maciej-kosiński-127390141/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/SirKOSA"><i class="fab fa-github"></i></a>
-                <a href="https://www.artstation.com/sirkosa"><i class="fab fa-artstation"></i></a>
-                <a href="https://sirkosa.itch.io"><i class="fab fa-itch-io"></i></a>
-            </p>
-        </div>
-      </footer>
+            <!-- 2D & 3D Graphics -->
 
-      <div class="modal" id="gradWorkModal">
-        <div class="modal-background closeModal"></div>
-        <div class="modalContentWrapper">
-            <div class="modal-content">
-                <div class="container">
-                    <h1 class="title textGradiantPrimary">Graduation work</h1>
-                    <p>For my graduation work I have made multiplayer game using Blender and Unity.</p>
-                    <p>The game "Tough Week" is a local multiplayer game that supports up to 4 players. During gameplay, players can choose their own color and hat for their character, and compete in a series of challenges to win the tournament. Player with the most wins at the end of the tournament, wins</p>
-                    <p>Players can join the game using keyboard or controller by pressing single button. The game lets players setup tournament with single level or let the game choose diffrent level for each round randomly. Available levels are determined by the amount of players that joined the game.</p>
-                    <p>The game has levels that each have their own implementation of scoring players and some randomness. When the winner is selected the event about winner is triggered and the tournament singleton saves winners id into scoreboard</p>
-                </div>
-                <img src="./imgs/menu.png" />
-                <img src="./imgs/shoppinglevel.png" />
-                <img src="./imgs/sheeplevel.png" />
+            <div class="bg-light shadow-lg px-4 featurette" id="graphics">
+              <div class="col-md-5">
+                <h2 class="featurette-heading mt-0 pt-5">2D & 3D graphics</h2>
+                <p class="lead">Computer graphics and drawing was always a hobby of my. Until now I have been working on pictures in Photoshop and 3d models in Blender.</p>
+              </div>
+              <div class="col-md-7">
+                <img class="featurette-image img-fluid mx-auto"  alt="" >
+              </div>
             </div>
-        </div>
-        <button class="modal-close is-large closeModal" aria-label="close"></button>
-      </div>
 
-      <div class="modal" id="internWorkModal">
-        <div class="modal-background closeModal"></div>
-        <div class="modalContentWrapper">
-            <div class="modal-content">
-                <div class="container">
-                    <h1 class="title textGradiantPrimary">Internship</h1>
-                    <p>Durning my internship in fundation "Fundacja Edukacyjna Równe Szanse", I have been working on a front end quiz application in WPF as well as escaperoom game for students.</p>
-                    <p>In the WPF application I had build a user interface from the provided UI and implemented lists with questions and papers for students to learn. All the questions aswell as logins for the applications were pulled from api.</p>
-                    <p>In the escaperoom project, I had been working on programming the logic of puzzles and editor, so that teachers could change puzzles to required a diffrent anwsers from students.</p>
+            <div class="container main-content py-5 px-4">
+                <div class="container py-5 px-4" id="icon-grid">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Adobe photoshop</h4>
+                        <p>In highschool I have been working on verious photos and 2d graphics in my free time.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Blender</h4>
+                        <p>While studying I have learned basics of 3d graphics which made it a new hobby of my. Currrently I am focusig more on a still images which I poste on my artstation.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Quixel mixer</h4>
+                        <p>Quixel is one of the programs that I have been learning to impove the textures on my 3D models.</p>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                      <div>
+                        <h4 class="fw-bold mb-0">Aseprite</h4>
+                        <p>I have been using aseprite for my game developments and 2d pixelart.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- ALBUM -->
+                <div class="album py-5">
+                  <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" src="img/watertvs.jpg">
+                          <div class="card-body">
+                            <p class="card-text">Floating TV, combines a few of mine early renders, which are displayed on the TVs.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-purple" onclick=" window.open('https://www.artstation.com/artwork/3ddLng','_blank')" >View</button>
+                              </div>
+                              <small class="text-muted">Blender</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img class="card-img-top img-fluid" width="100%" height="225" preserveAspectRatio="xMidYMid slice" src="img/vectors.png">
+              
+                          <div class="card-body">
+                            <p class="card-text">This is a pixel art weapon that I have made, with the idea of modularity. 
+                              The image is spread into spritesheets,, which each contains diffrent parts from the weapon that can be swapped and combined tocreate diffrent final images.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-pink" onclick=" window.open('https://sirkosa.itch.io/pixelart-vector','_blank')" >View</button>
+                              </div>
+                              <small class="text-muted">Aseprite</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img class="card-img-top img-fluid" width="100%" height="225" preserveAspectRatio="xMidYMid slice" src="img/christmas.jpg">
+              
+                          <div class="card-body">
+                            <p class="card-text">This work was made to learn indoor rendering and lightning.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-green" onclick=" window.open('https://www.artstation.com/artwork/3dryYY','_blank')" >View</button>
+                              </div>
+                              <small class="text-muted">Blender</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END 2D & 3D Graphics-->
+
+
             </div>
+
+
+
         </div>
-        <button class="modal-close is-large closeModal" aria-label="close"></button>
-      </div>
-
-      <script src="script.js"></script>
-
+    </main>
+    
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
+    <link href="js/bootstrap.js" rel="script">
   </body>
 </html>
